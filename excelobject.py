@@ -20,7 +20,8 @@ class excelproperty:
     epf12amount=None
     etf3=None
     grosssalary=None
-
+    dayoffcount=None
+    dayoffamount=None
 
 
 

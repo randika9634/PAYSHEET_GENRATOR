@@ -165,118 +165,170 @@ def ot2hrsamount(pdf,ot2h):
         pdf.set_text_color(000, 00, 00)
         pdf.cell(w=210.0, h=40.0, align='L', txt=ot2h, border=0 )
 
+
+
+
+
+
+def dayoff(pdf):
+        pdf.set_xy(10.0,135.0)
+        pdf.set_font('Times','B', 16,)
+        pdf.set_text_color(000, 00, 00)
+        pdf.cell(w=210.0, h=40.0, align='L', txt="DAY OFF/LEAVES :", border=0 )
+
+def dayoffamount(pdf,dayoffamount):
+        pdf.set_xy(70.0,135.0)
+        pdf.set_font('Times','U', 16,)
+        pdf.set_text_color(000, 00, 00)
+        pdf.cell(w=210.0, h=40.0, align='L', txt=dayoffamount, border=0 )
+
+def dayoffrate(pdf):
+        pdf.set_xy(100.0,135.0)
+        pdf.set_font('Times','B', 12,)
+        pdf.set_text_color(000, 00, 00)
+        pdf.cell(w=210.0, h=40.0, align='L', txt="RATE :", border=0 )
+
+def dayoffrateamount(pdf,dayoofr):
+        pdf.set_xy(115.0,135.0)
+        pdf.set_font('Times','U', 12,)
+        pdf.set_text_color(000, 00, 00)
+        pdf.cell(w=210.0, h=40.0, align='L', txt=dayoofr, border=0 )
+
+def dayoffhrs(pdf):
+        pdf.set_xy(150.0,135.0)
+        pdf.set_font('Times','B', 12,)
+        pdf.set_text_color(000, 00, 00)
+        pdf.cell(w=210.0, h=40.0, align='L', txt=" DAYS :", border=0 )
+
+def dayoffcount(pdf,dayoffcount):
+        pdf.set_xy(170.0,135.0)
+        pdf.set_font('Times','U', 12,)
+        pdf.set_text_color(000, 00, 00)
+        pdf.cell(w=210.0, h=40.0, align='L', txt=dayoffcount, border=0 )
+
+
+
+
+
+
+
+
+
+
+
+
 def attendeceallowence(pdf):
-        pdf.set_xy(10.0,140.0)
+        pdf.set_xy(10.0,150.0)
         pdf.set_font('Times','B', 16,)
         pdf.set_text_color(000, 00, 00)
         pdf.cell(w=210.0, h=40.0, align='L', txt="ATTENDANCE ALLOWANCE :", border=0 )
 
 def attendeceallowenceamount(pdf,ata):
-        pdf.set_xy(100.0,140.0)
-        pdf.set_font('Times','U', 16,)
-        pdf.set_text_color(000, 00, 00)
-        pdf.cell(w=210.0, h=40.0, align='L', txt=ata, border=0 )
-
-def attendeceincentice(pdf):
-        pdf.set_xy(10.0,150.0)
-        pdf.set_font('Times','B', 16,)
-        pdf.set_text_color(000, 00, 00)
-        pdf.cell(w=210.0, h=40.0, align='L', txt="ATTENDANCE INCENTIVE :", border=0 )
-
-def attendeceincentiveamount(pdf,ata):
         pdf.set_xy(100.0,150.0)
         pdf.set_font('Times','U', 16,)
         pdf.set_text_color(000, 00, 00)
         pdf.cell(w=210.0, h=40.0, align='L', txt=ata, border=0 )
 
+def attendeceincentice(pdf):
+        pdf.set_xy(10.0,160.0)
+        pdf.set_font('Times','B', 16,)
+        pdf.set_text_color(000, 00, 00)
+        pdf.cell(w=210.0, h=40.0, align='L', txt="ATTENDANCE INCENTIVE :", border=0 )
+
+def attendeceincentiveamount(pdf,ata):
+        pdf.set_xy(100.0,160.0)
+        pdf.set_font('Times','U', 16,)
+        pdf.set_text_color(000, 00, 00)
+        pdf.cell(w=210.0, h=40.0, align='L', txt=ata, border=0 )
+
 def grosssalary(pdf):
-        pdf.set_xy(10.0,165.0)
+        pdf.set_xy(10.0,175.0)
         pdf.set_font('Times','B', 16,)
         pdf.set_text_color(000, 00, 00)
         pdf.cell(w=210.0, h=40.0, align='L', txt="GROSS SALARY :", border=0 )
 
 def grosssalaryamount(pdf,gs):
-        pdf.set_xy(100.0,165.0)
+        pdf.set_xy(100.0,175.0)
         pdf.set_font('Times','U', 16,)
         pdf.set_text_color(000, 00, 00)
         pdf.cell(w=210.0, h=40.0, align='L', txt=gs, border=0 )
 
 def deductions(pdf):
-        pdf.set_xy(10.0,175.0)
+        pdf.set_xy(10.0,185.0)
         pdf.set_font('Times','U', 18,)
         pdf.set_text_color(000, 00, 00)
         pdf.cell(w=210.0, h=40.0, align='L', txt="DEDUCTIONS ", border=0 )
 
 def epf8(pdf):
-        pdf.set_xy(10.0,185.0)
+        pdf.set_xy(10.0,195.0)
         pdf.set_font('Times','B', 16,)
         pdf.set_text_color(000, 00, 00)
         pdf.cell(w=210.0, h=40.0, align='L', txt="EPF 8% :", border=0 )
 
 def epf8amount(pdf,gs):
-        pdf.set_xy(100.0,185.0)
-        pdf.set_font('Times','U', 16,)
-        pdf.set_text_color(000, 00, 00)
-        pdf.cell(w=210.0, h=40.0, align='L', txt=gs, border=0 )
-
-def salaryadvance(pdf):
-        pdf.set_xy(10.0,195.0)
-        pdf.set_font('Times','B', 16,)
-        pdf.set_text_color(000, 00, 00)
-        pdf.cell(w=210.0, h=40.0, align='L', txt="SALARY ADVANCE :", border=0 )
-
-def salaryadvanceamount(pdf,gs):
         pdf.set_xy(100.0,195.0)
         pdf.set_font('Times','U', 16,)
         pdf.set_text_color(000, 00, 00)
         pdf.cell(w=210.0, h=40.0, align='L', txt=gs, border=0 )
 
-def toatldeduction(pdf):
+def salaryadvance(pdf):
         pdf.set_xy(10.0,205.0)
         pdf.set_font('Times','B', 16,)
         pdf.set_text_color(000, 00, 00)
-        pdf.cell(w=210.0, h=40.0, align='L', txt="TOTAL DEDUCTIONS :", border=0 )
+        pdf.cell(w=210.0, h=40.0, align='L', txt="SALARY ADVANCE :", border=0 )
 
-def toatldeductionamount(pdf,gs):
+def salaryadvanceamount(pdf,gs):
         pdf.set_xy(100.0,205.0)
         pdf.set_font('Times','U', 16,)
         pdf.set_text_color(000, 00, 00)
         pdf.cell(w=210.0, h=40.0, align='L', txt=gs, border=0 )
 
+def toatldeduction(pdf):
+        pdf.set_xy(10.0,215.0)
+        pdf.set_font('Times','B', 16,)
+        pdf.set_text_color(000, 00, 00)
+        pdf.cell(w=210.0, h=40.0, align='L', txt="TOTAL DEDUCTIONS :", border=0 )
+
+def toatldeductionamount(pdf,gs):
+        pdf.set_xy(100.0,215.0)
+        pdf.set_font('Times','U', 16,)
+        pdf.set_text_color(000, 00, 00)
+        pdf.cell(w=210.0, h=40.0, align='L', txt=gs, border=0 )
+
 def netpay(pdf):
-        pdf.set_xy(10.0,250.0)
+        pdf.set_xy(10.0,260.0)
         pdf.set_font('Times','B', 16,)
         pdf.set_text_color(000, 00, 00)
         pdf.set_fill_color(128, 128, 128)
         pdf.cell(w=190.0, h=10.0, align='L', txt="NET PAY :", border=0, fill = True )
 
 def netpayamount(pdf,gs):
-        pdf.set_xy(170.0,250.0)
+        pdf.set_xy(170.0,260.0)
         pdf.set_font('Times','B', 16,)
         pdf.set_text_color(000, 00, 00)
         pdf.set_fill_color(128, 128, 128)
         pdf.cell(w=190.0, h=10.0, align='L', txt=gs, border=0,  )
 
 def epf12(pdf):
-        pdf.set_xy(10.0,230.0)
+        pdf.set_xy(10.0,240.0)
         pdf.set_font('Times','B', 16,)
         pdf.set_text_color(000, 00, 00)
         pdf.cell(w=210.0, h=10.0, align='L', txt="E.P.F 12% :", border=0 )
 
 def epf12amount(pdf,gs):
-        pdf.set_xy(100.0,230.0)
+        pdf.set_xy(100.0,240.0)
         pdf.set_font('Times','U', 16,)
         pdf.set_text_color(000, 00, 00)
         pdf.cell(w=210.0, h=10.0, align='L', txt=gs, border=0 )
 
 def etf3(pdf):
-        pdf.set_xy(10.0,240.0)
+        pdf.set_xy(10.0,250.0)
         pdf.set_font('Times','B', 16,)
         pdf.set_text_color(000, 00, 00)
         pdf.cell(w=210.0, h=10.0, align='L', txt="E.T.F 3% :", border=0 )
 
 def etf3amount(pdf,gs):
-        pdf.set_xy(100.0,240.0)
+        pdf.set_xy(100.0,250.0)
         pdf.set_font('Times','U', 16,)
         pdf.set_text_color(000, 00, 00)
         pdf.cell(w=210.0, h=10.0, align='L', txt=gs, border=0 )
