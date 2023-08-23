@@ -6,6 +6,7 @@ from fpdf import FPDF
 from openpyxl.descriptors.serialisable import Serialisable
 createpdf=cratepdf
 pattern= "{:.2f}"
+pattern1= "{:0}"
 # empd =excelobject.excelproperty
 style=pdfsheetfunction
 
@@ -18,7 +19,7 @@ for x in range(4, row_count+1):
     empd =excelobject.excelproperty
     empd.CompanyName=sheet['A1'].value
     empd.payRollMonth=sheet['B2'].value
-    empd.epfNo =sheet['A'+str(x)].value
+    empd.epfNo =int(sheet['A'+str(x)].value)
     empd.name=sheet['B'+str(x)].value
     empd.rate=pattern.format(sheet['C'+str(x)].value)
     empd.days=sheet['D'+str(x)].value
