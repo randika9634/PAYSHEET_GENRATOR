@@ -73,10 +73,10 @@ def basicgt(pdf,basic):
         pdf.set_xy(10.0,90.0)
         pdf.set_font('Times','B', 16,)
         pdf.set_text_color(000, 00, 00)
-        pdf.cell(w=210.0, h=40.0, align='L', txt="BASIC Inc bgtRA 1000 :   ", border=0 )
+        pdf.cell(w=210.0, h=40.0, align='L', txt="BASIC Inc bgtRA 1000 + 2500 :   ", border=0 )
 
 def basicgtamount(pdf,basic):
-        pdf.set_xy(70.0,90.0)
+        pdf.set_xy(100.0,90.0)
         pdf.set_font('Times','U', 16,)
         pdf.set_text_color(000, 00, 00)
         pdf.cell(w=210.0, h=40.0, align='L', txt=basic, border=0 )
@@ -88,7 +88,7 @@ def basic(pdf,basic):
         pdf.cell(w=210.0, h=40.0, align='L', txt="TOTAL P.F :   ", border=0 )
 
 def basicamount(pdf,basic):
-        pdf.set_xy(70.0,100.0)
+        pdf.set_xy(100.0,100.0)
         pdf.set_font('Times','U', 16,)
         pdf.set_text_color(000, 00, 00)
         pdf.cell(w=210.0, h=40.0, align='L', txt=basic, border=0 )
